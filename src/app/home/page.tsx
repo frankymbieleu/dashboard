@@ -1,56 +1,28 @@
+import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { SidebarInset, SidebarTrigger } from "@/components/ui/sidebar";
+import { Separator } from "@radix-ui/react-separator";
 import Image from "next/image";
 
-export default function Home() {
+export default async function Page() {
+  await new Promise((resolve) => setTimeout(resolve, 2000));
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-     
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+ <div className="flex flex-col md:flex-row gap-4 p-4">
+      <div className="md:w-1/3 bg-blue-100 p-6 rounded-lg">
+        <h3 className="font-bold text-lg mb-2">Titre 1</h3>
+        <p>Contenu de la première colonne</p>
+      </div>
+
+      <div className="md:w-1/3 bg-green-100 p-6 rounded-lg">
+        <h3 className="font-bold text-lg mb-2">Titre 2</h3>
+        <p>Contenu de la deuxième colonne</p>
+      </div>
+
+      <div className="md:w-1/3 bg-purple-100 p-6 rounded-lg">
+        <h3 className="font-bold text-lg mb-2">Titre 3</h3>
+        <p>Contenu de la troisième colonne</p>
+      </div>
     </div>
+    
   );
 }
