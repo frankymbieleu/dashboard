@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///D:/FRANKY%20MBIELEU/todo_list/dashboard/src/app/dashboard/page.tsx"],"sourcesContent":["import { AppSidebar } from \"@/components/app-sidebar\"\nimport {\n  Breadcrumb,\n  BreadcrumbItem,\n  BreadcrumbLink,\n  BreadcrumbList,\n  BreadcrumbPage,\n  BreadcrumbSeparator,\n} from \"@/components/ui/breadcrumb\"\nimport { Separator } from \"@/components/ui/separator\"\nimport {\n  SidebarInset,\n  SidebarProvider,\n  SidebarTrigger,\n} from \"@/components/ui/sidebar\"\n\nexport default function Page() {\n  return (\n       <div className=\"flex flex-1 flex-col gap-4 p-4 pt-0\">\n          <div className=\"grid auto-rows-min gap-4 md:grid-cols-3\">\n            <div className=\"bg-muted/50 aspect-video rounded-xl\" />\n            <div className=\"bg-muted/50 aspect-video rounded-xl\" />\n            <div className=\"bg-muted/50 aspect-video rounded-xl\" />\n          </div>\n          <div className=\"bg-muted/50 min-h-[100vh] flex-1 rounded-xl md:min-h-min\" />\n        </div>\n\n  )\n}\n"],"names":[],"mappings":";;;;;AAgBe,SAAS;IACtB,qBACK,8OAAC;QAAI,WAAU;;0BACZ,8OAAC;gBAAI,WAAU;;kCACb,8OAAC;wBAAI,WAAU;;;;;;kCACf,8OAAC;wBAAI,WAAU;;;;;;kCACf,8OAAC;wBAAI,WAAU;;;;;;;;;;;;0BAEjB,8OAAC;gBAAI,WAAU;;;;;;;;;;;;AAIzB","debugId":null}}]
+}
